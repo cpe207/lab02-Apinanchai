@@ -3,48 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Status Post</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>-My Portfolio-</title>
-    <link href="/lab02-Apinanchai/topic.css" rel="stylesheet">
+    <link href="topic.css" rel="stylesheet" />
   </head>
-  <body>
-    
-    <center><h1 style="background-color: orange">My Portfolio</h1></center>
-
-    
-    <div class="topnav">
-      <a href="/lab02-Apinanchai/index.html">Home</a>
-      <a class="active" href="/lab02-Apinanchai/Experience page.html">Experience</a>
-      <a href="/lab02-Apinanchai/Contact.html">Contact</a>
+  <body class="bg-dark">
+    <div class="p-2 bg-dark text-light my-4">
+      <center><h1>My Portfolio</h1></center>
     </div>
-    
+
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a class="active" href="Experience page.html">Experience</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+    <br />
+
+    <center><div class="text-light fw-bold fs-1">Experience</div></center>
     <br />
 
     <center>
-      <img
-        src="data:image/jpeg;base64,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"
-      />
+      <div
+        class="border rounded-4 p-2 bg-success-subtle"
+        style="max-width: 50rem"
+      >
+        <div class="d-flex gap-2 align-items-center">
+          <img
+            src="/lab02-Apinanchai/image/me/Game project.png"
+            width="180px"
+            height="150px"
+            class="rounded-bottom-pill"
+          />
+          <div>
+            <div class="fw-bold fs-4">Game Project</div>
+          </div>
+        </div>
+
+        <div class="my-3 fs-5">
+          Make a game with my friends to send the Project
+        </div>
+      </div>
     </center>
-
-    <center><h2 style="color: chocolate">&#128049  Apinanchai yooyativong  &#128049</h2></center>
-
-    <center><h4>Hi my name is Chanan. nice too meet you.</h4></center>
-
-    <center><h2 style="background-color: burlywood">&#129504 Experience &#129504</h2></center>
-
-    <h2 style="background-color: burlywood">Game project</h2>
-    <h3 style="color: chocolate">
-      Make a game with my friends to send the Project
-    </h3>
 
     <br />
 
-    <h2 style="background-color: burlywood">Hobby</h2>
-    <h3 style="color: chocolate">
-      I love to listen music &#127911; , play game &#129302 and travel
-    </h3>
+    <center>
+      <div
+        class="border rounded-4 p-2 bg-danger-subtle"
+        style="max-width: 50rem"
+      >
+        <div class="d-flex gap-2 align-items-center">
+          <img
+            src="/lab02-Apinanchai/image/me/Wed1.jpg"
+            width="180px"
+            height="150px"
+            class="rounded-bottom-pill"
+          />
+          <div>
+            <div class="fw-bold fs-4">Web developer</div>
+          </div>
+        </div>
 
-    
+        <div class="my-3 fs-5">
+          I develop a website that's a story about my in the wedsite.
+        </div>
+      </div>
+    </center>
+    <br />
 
-    <h4></h4>
+    <center>
+      <div
+        class="border rounded-4 p-2 bg-warning-subtle"
+        style="max-width: 50rem"
+      >
+        <div class="d-flex gap-2 align-items-center">
+          <img
+            src="/lab02-Apinanchai/image/me/Apex1.jpg"
+            width="180px"
+            height="150px"
+            class="rounded-bottom-pill"
+          />
+          <div>
+            <div class="fw-bold fs-4">Pro player APEX mobile</div>
+          </div>
+        </div>
+
+        <div class="my-3 fs-5">
+          I used to be a pro player of Apex moblie and was the 575th highest
+          rank player in the world.
+        </div>
+      </div>
+    </center>
   </body>
 </html>

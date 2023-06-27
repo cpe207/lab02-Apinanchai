@@ -3,41 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Status Post</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>-My Portfolio-</title>
-    <link href="/lab02-Apinanchai/topic.css" rel="stylesheet" />
+    <link href="topic.css" rel="stylesheet" />
   </head>
-  <body>
-    <center><h1 style="background-color: orange">My Portfolio</h1></center>
+  <body class="bg-dark">
+    <div class="p-2 bg-dark text-light my-4">
+      <center><h1>My Portfolio</h1></center>
+    </div>
 
     <div class="topnav">
-      <a href="/lab02-Apinanchai/index.html">Home</a>
-      <a href="/lab02-Apinanchai/Experience page.html">Experience</a>
-      <a class="active" href="/lab02-Apinanchai/Contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="Experience page.html">Experience</a>
+      <a href="Gallery.html">Gallery</a>
+      <a class="active" href="Contact.html">Contact</a>
     </div>
     <br />
-    <center>
-      <img
-        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHkAtgMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAIDBQYBB//EAD4QAAIBAgUCAwQGCAUFAAAAAAECAwARBAUSITFBURMiYQZxgZEUMkKhwfAVIzM1UnJzsQc0grLRFkNikqL/xAAaAQACAwEBAAAAAAAAAAAAAAAAAQIDBAUG/8QAJBEAAgICAwACAgMBAAAAAAAAAAECEQMSBCExIkEyURNxgQX/2gAMAwEAAhEDEQA/ANw2XI5uWNPGXDo5otb1NGelafTMkV65WQTeRqk/R4UbmrGututhzQwopHwQjBZWY971T5vjYsFCT/3Og61Z57jjhEKqfMeNJ5rzjPcd4YaSeTe9tK7n3VmnPujRDH9k2Ze0rxa2B3sfKvcj/is9+lp52s08qqd1VOtMTCmSOLGtKW+teLob8/d091RNHDIwnVwvozcVAto13s97QSxBEfEvp28sn52+dbrDSrjYwRIQT2NeN4bHok+lf1i3sSd63OQZhPHImx8PoO1SUiEoG+w0RhiC2JPenvLINgporL3SbDK4bkUR4YJ4BrSvDPRWCSUcqRULSyKSbvVz4foKXhC3ApiooWxMwBKq5qFMVjHe1mUXrRGIdRXBCgN9AvRQmivgOIKi+/vFTHxPtJRtrcUrE1PYNSsYyhtor05WkA3jtVgUphU1LYWpWzTSBTpXehIpppGYSEAVbvEG5Wh3wkRN9O/pSfYUBM5XZTceppVO2CjvwaVR1f7D/CGLMoWNr0UmMiPBFZmO1FxVTsWUaSLEI3UCnzTxxws+xsKo4+Kbi3KrGindjxUJ5Ki2ShG5UUueM0s7zSNwOPwrznPEVpw8xJGryxqd/j2r0PO5UhhN9yx8tYHGYYSTPIwJ32H4VzFke3Z0449l0VqYiVmOvSmHttCp5qLE4gNYIhAPqN6Klw8gsERVbrtUb4JhINZLSHknp6VfHJYpYmjuAQhke3lDA2+NavATPdVi2Y/dVNHg9GGDAGyi4J9KucsUJN8vz99Wb9lDgzdezmL0aYpDcN19a1cd7DrXnWCxIiZQDcg3+ZrcZfj1aAXF9rg1ohIzTjXZZC9I3ocY2M87U4YqI9autECUV02pi4iM9RTvFjPWlYCpV0Mneu3FOwobTSKk2rhosKIWFRMBepmqFgL1K0Roia1+bUq49r0qLQjHxUbDQaBh9mi4hc7iqGTDI6ja0uYInPhoWt8akjAp8EapNPiG2BQJ/cn+4qrL5Rbi9sy+cYeTEY9zZtCHSm3Tr8T36D31WtgxH5zEZHtZV02C/H8a0uPxuG1tq1IRwStV00ystkKkt1HNc9pWdKDdeFE+AYebTrlbqdgtNhykNJrkbUR04FW05ISy9uaYqnQNXNSSSHKTZBjokXCqgHLKu3qRTsJCBIGttbV+fnUzRGYaSPKeDROFgKLZtza35+VWxRRKX0VEEztjyAeGsfnXouXRlMFCDzpv8968+y6ASZmy8a3vfsBXpN7bAWA2tV2H7ZmzvwWmlpNd1UtQrQUWNtXNx1PzpxauXoAQdhwTXfFkHDmm3rhoGSfSZR9quHGSjrUdRvTth0SPj5h2oeTMpR0FMkoWWhNipE7ZpIPsilVe3NKpbMVI7HxRUTAciqzC6oAIo9Uo6sxqwV21AKoI61XYwyMhuQBT5Y3aBliIU9zxUNxy21EeXw7avL3qvL+Jbi/I809pctz6NpZYMwknuVCJCqqqi+9733taoPZKDN3YrmSaj0NhcD4Gt3mC4c3aQK1v4t6Gy2WB2JjjWOMEgtsLn3VlbjWrN+svUVGLikjcixtWezPPRgGYypK6rYEIQLXBsNzybGtjj3HiNbz9NhQDZXDjYyV0sDsVkW4+VCjATcihyn2lw+KljSKaaNmJ0x4hbBrcgHitpg9M6i40seaqIfZ3BRqFbCwgA38q2t91XOEw6QhRETboCasjS8K5q12CwYWCPOdAfwyo8xtxetfWJyqF88zVcQtxhkxDsxB2dFNl+dbm3ep8eTdlXKgoaq+xlcDA9acwtTVHcWNaDKKlXbUrUANJpXpEb0rUANvTGp5FMagCCShZTRUlCS8U0AOx3pVxhvSoEPGFa+zX7ii0ihjXUxsR61TYVMTGxM5Pqb1ZeHFMu92B9aiCsMkxODjQCR1YHi1QYrEBYQYdl6UzDQ4SE7RA+p3pYwPNGDHFbtvaqcqbiXY5xhK5FDmOIJVgxsKCGIy+fDpJ4cjsg8rorbfGpcUVmnaGdSqr9dTz8qKOIvF4eEKxoF29PhWGNfZ1FNOqKKQwtKunMJka+wLafhbrVxlrrEXHiFtXmJPU0JiJfE/VTlZVPPlpuCgw2GZxFdFbe19hU6SVoJNt0y+jxak25ohmUQO4v0At0J2FUKNZ/KetD59mDu8GXYTeUuNf8x2A+/76nFuuzFzcscENl6b/ACzApgcNpRQrOdTenp7qLXegVjXDyKFZljboDdQfd0+FGq1gQqjUPXY1v00VGCOVzfyXYm2BNjVfiZ8WD+piuKsYzIQfEAHa1NZnD2FrVEsK+HFznZ49J61P4pOwdQe1FaNtwKh+iw+L4nhjXa2qiwOKWtyDTrmpNFuBTWBFMQ2+1Ma1cusl7gi1cYKoHXtvRYEMhA5oWWppiGOkxtYVA52pgDMd6VJwL82pUxEqRq1tRJokQroCp5aijAFTvKsMTObG3A7motpLsUpqEXKXiIpgmEBdmLv0Uday2e46Z3sZmQnhb7Gn4r2hieaY6dXhk3P8Vu1Z2TP1zSUwS4cJ1FjvXOy59nSPPZs2bkTtr4obLm+LhHhyrHiIl4WUXt7jyPgaiX2jhB/WwunuINqssjyZMwmxGIxpYYKBNyuxZzaw9O/y71b5j7F5LJEbLLG7bqUkPlFuN73qMMUpdnY4S5GqcX0ZZvaDKtQZsS6/+PguT9wpkntXgENoIp5j/wCooyf/AA71knB5mCnFni3HyNTYT/DdAR9KzJytuIorfeT+Falil9I1y5OXxgEHtHPKrGKFMP6htTf22rUexuRTSYtM0xyFY180KNy7fxH0qxyb2WyrLCrxYfxJV4kmOog+nQVpY/Mh7jrV2LjtS2kYpRnkntN2IoJ4iPtqadA5Qg3v0YfjSiOhWtzS1Kx1qNx9Yd61MvQVHMJFvp29KfZTzVRhcSEzrEYQv9fzKPWwP4n5VbEDuTWceDL/ACR79Tocqr0399PFuwqEqOhNOU2HJoLjr3CkraoA7sRYA1K5BQi3NRDDx9jf0NNgdYMDbb1pptwVp/hheL/E1Gb8XpDIZ4xuVNqAYAkqb6um1WEgPRvmKExGpRe97+nFMCumwzM37Ww91KpTOeoPyrlAWOjIY96DzLEjWIlNggBb3mpYLoo1eYgbnis7NmCCKbFSt9eZtIHW21ZuXLWNI5X/AEptYlBfZR5nGY5tcfBJuB1qknQu4MIKzXutupq7zLFAzebYFQQLdDVVDjIzmIwyqdbI4Rx30neubBNvoyYdq8PUsuwD/wDTuGwk6rCzwhpwN9LNubW5NPxsiO7WI0gWFU+XZ59NyuFy1nVQki34YCxFDTYq52J2rcp10j1eHHH+NV+i4Sb6NDeAM4QbDktVlBMsynYBhyBWUjxh4B8tGYTG6MUreINLWAW3X1rTjydleXDaNMthU0b2PoaDuRUiSX2FbKOeGDYGoGbS5IJFOjlBGlqjxA02YbjvToDNe0SyYb2lyzMImYXRlsOCwP8Aw1bDLswhx+EjniP1uVPKntWa9ohF+jRiJg1sM4clRuAfKT8L3+FVuR+0OBwmZJEJNUeJNr8WPSsOT4ZP7MazSxcmq+LPQbi1N2BJvzQ64qJh1Hvp/ioR9barDqEmvvtTg/ahpCGGzb0NJFJItmmsD/DTAsC7e+o3Y9RQsaNEllY34uTeutJZLFrnrSAddrknihMTMscbO5uq9qbLMy38ht3vQniu7H9V5epY0xijlSYalDW9RSroYL5SRt2pUCK/GzvhsvxEglDhR0HG9qxJmQwYX6Q1oIlMspvzdjYfGtS/7ixP8j1gs2/c3+pP9lYeUrmkczlw2ypMCzXO/peKd/tHYKo4FXmS4RcuwzYvFhDi5FIQHfwx1Hv71lfZf98w/wBStXjftf1pP91V5IqCpEOTFQSxxBfpzYfEtLh30huV6H896LTOVO8im/dd6oZfrv76HNRizRg5GTDGovo1BzePTdNZFv4TWm9lY4pWXGz6bEnw0J/+q89i/Zp/q/Gtxk/7GL3L/auhxopy7Nb5c8i18NtYMLgiozeM0PhOBRx+oK6FFBzQTvfapAhAIJuD0pkNT9BTSAAx+EEuDnQkFGjYMp7WrxdJg8mpdrbrY8V7XmX+Qxf9F/7V4Xg+BXP5yVooypM9ry3Mxictw7vGzyaF16VvvbmrNJFIHktWY9jPqH+kn41pD1oxu4o08WbniTZJ4p6AUvFPpUQpVI0D2kJ2qGQgC5YDua5Lyv8AMKr5v2h/qUDQWzqvDFge9RySoiM54IvYc0pP8u1V8v1Yf5aBkn0oHdnC34uLGlQGI/bH89qVMif/2Q=="
-      />
-    </center>
+
+    <center><div class="text-light fw-bold fs-1">Contact Me</div></center>
+    <br />
 
     <center>
-      <h2 style="color: chocolate">Apinanchai yooyativong &#x1F394;</h2>
+      <div
+        class="mx-auto d-flex align-items-center gap-3 flex-wrap bg-dark-subtle rounded-4 p-4"
+        style="max-width: 50rem"
+      >
+        <div class="d-flex gap-2 align-items-center">
+          <img
+            src="/lab02-Apinanchai/image/me/Contact.jpg"
+            width="200px"
+            height="200px"
+            class="rounded-bottom-pill"
+          />
+
+          <div class="vstack gap-2" style="max-width: 450px">
+            <div class="d-flex fs-4">
+              <div style="min-width: 150px" class="fw-semibold">Name</div>
+              <div class="text-muted">: Apinanchai yooyativong</div>
+            </div>
+
+            <div class="d-flex fs-4">
+              <div style="min-width: 150px" class="fw-semibold">Nickname</div>
+              <div class="text-muted">: Chanan</div>
+            </div>
+
+            <div class="d-flex fs-4">
+              <div style="min-width: 150px" class="fw-semibold">E-mail</div>
+              <a href="mailto:Apinanchai_y@cmu.ac.th" class="text-muted">
+                : Apinanchai_y@cmu.ac.th
+              </a>
+            </div>
+
+            <div class="d-flex fs-4">
+              <div style="min-width: 150px" class="fw-semibold">GitHub</div>
+              <a href="https://github.com/Apinanchai" class="text-muted">
+                : github.com/Apinanchai
+              </a>
+            </div>
+
+            <div class="d-flex fs-4">
+              <div style="min-width: 150px" class="fw-semibold">Tel.</div>
+              <div class="text-muted">: 085-541-5155</div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-3" />
+      </div>
     </center>
-
-    <center><h4>Hi my name is Chanan. nice too meet you.</h4></center>
-
-    <center><h2 style="background-color: burlywood">Contact</h2></center>
-
-    <center>
-      <h3>
-        <a style="color: chocolate">E-mail</a> :
-        <a href="mailto:Apinanchai_y@cmu.ac.th" style="color: chocolate"
-          >Apinanchai_y@cmu.ac.th</a
-        >
-      </h3>
-    </center>
-
-    <center><h3 style="color: chocolate">Tel : 085-541-5155</h3></center>
   </body>
 </html>
